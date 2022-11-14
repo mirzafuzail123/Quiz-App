@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+.zigzag {
+    position: relative;
+    white-space: nowrap;
+}
+.zigzag:after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: url(http://high-8.com/assets/svg/zigzag.svg);
+    background-size: cover;
+}}
